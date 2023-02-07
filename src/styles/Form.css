@@ -1,0 +1,15 @@
+.flex-form {
+    display: flex;
+    flex-flow: column wrap;
+    padding: 10px;
+    
+}
+.form-div {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0px 10px 0px;
+}
+.form-input {
+    border-radius: 3px;
+    border: 2px solid black;
+}

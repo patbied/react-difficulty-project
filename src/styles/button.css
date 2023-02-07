@@ -1,0 +1,10 @@
+.button-class {
+    border: 2px solid black;
+    margin: 5px;
+    color: white;
+    background-color: green;
+    box-shadow: 7px 6px 28px 1px rgba(0, 0, 0, 0.24);
+    transition: 200ms;
+    min-width: 20%;
+}
+
