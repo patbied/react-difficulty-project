@@ -18,5 +18,8 @@ Border Radius preview
 Timer
 -Timer which counts down from a specified time.
 -User can Stop/Start timer and reset time to change time
---TO ADD:
---User inputs time (right now its hardcoded)
+
+Random meal Generator 
+-TO DO:
+--Button to fetch data
+

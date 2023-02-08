@@ -3,6 +3,7 @@ import Card from './ui/Card'
 import BinaryToDecimal from './components/BinaryToDecimal';
 import BorderRadiusPreview from './components/BorderRadiusPreview';
 import Timer from './components/Timer';
+import RandomMeal from './components/RandomMeal';
 function App() {
   return (
     <div className="App">
@@ -13,7 +14,10 @@ function App() {
         <BorderRadiusPreview/>
       </Card>
       <Card title="Timer">
-        <Timer hours={1} minutes={0} seconds={2}/>
+        <Timer/>
+      </Card>
+      <Card title="Random Meal">
+        <RandomMeal/>
       </Card>
   
    
