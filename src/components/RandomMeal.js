@@ -34,15 +34,16 @@ const RandomMeal = () => {
             }
         
             
-        //    console.log(MealIngredients)
-             console.log(MealMeasurements)
+            //  console.log(MealIngredients)
+            //  console.log(MealMeasurements)
 
             //Set meal state equal to meal data
             setMeal({
                 name: mealAccess.strMeal,
                 category: mealAccess.strCategory,
                 ingredients: MealIngredients,
-                measurements: MealMeasurements
+                measurements: MealMeasurements,
+                instructions: mealAccess.strInstructions
             })
         
             setLoading(false)
@@ -60,14 +61,20 @@ const RandomMeal = () => {
         <>
         { loading ? 'Loading..' : 
         <>
-        <p>name: {meal.name}</p>
+        <p>Name: {meal.name}</p>
         <p>Category: {meal.category}</p>
         <p>Ingredients & Measurements</p>
-        <div className="SideBySide">
-            {meal.ingredients &&  <ul>{meal.ingredients.map((ingredient, index) => <li key={`ingredient${index}`}>{ingredient}</li>)}</ul>}
-            {/* {meal.ing && <ul>{meal.ingredients.map((ingredient)=> {<li key={ingredient}>{ingredient}</li>})}</ul> } */}
-            {meal.measurements && <ul>{meal.measurements.map((measurement, index) => <li key={`measurement${index}`}>{measurement}</li>)}</ul>}
+        <div className="two-sides">
+        <div className="one-side">
+            {meal.ingredients &&  <ul>{meal.ingredients.map((ingredient, index) => <li className="custom-list"  key={`ingredient${index}`}>{ingredient}</li>)}</ul>}
         </div>
+        <div className="one-side">
+            {meal.measurements && <ul>{meal.measurements.map((measurement, index) => <li className="custom-list" key={`measurement${index}`}>{measurement}</li>)}</ul>} 
+        </div>
+        </div>
+        <p>Instructions</p>
+        <p className="max-size-75 ">{meal.instructions}</p>
+        
        
         </>
         }

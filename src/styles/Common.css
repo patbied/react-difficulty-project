@@ -2,3 +2,18 @@
     display: flex;
     justify-content: center;
 }
+.two-sides {
+    display: flex;
+    justify-content: space-between;
+    min-width: 80%;
+    max-width: 80%;
+}
+.max-size-75 {
+    max-width: 80%;
+}
+.custom-list{
+    list-style: none;
+}
+.one-side {
+    margin: 10px;
+}

@@ -21,7 +21,5 @@ Timer
 
 Random meal Generator 
 -Displays a random meal fetched from the mealDB API (https://www.themealdb.com/api.php)
--Displays the name, category and ingredients
--TO DO:
---Add cooking instructions
+-Displays the name, category, ingredients, measurements, and cooking instructions
 
