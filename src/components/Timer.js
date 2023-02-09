@@ -45,8 +45,15 @@ const Timer = (props) => {
     const switchTimerState = () => {
         if (timerState === 1){
             setTimerState(0)
+           
         } else if (timerState === 0){
-            setTimerState(1)
+            
+            if (hours === 0 && minutes === 0 && seconds === 0){
+                setError("Timer is completed")
+                return
+            } else {
+                setTimerState(1)
+            }
         }
     }
     //Restarts clock
@@ -74,7 +81,7 @@ const Timer = (props) => {
         const decreaseTimeInterval = setInterval(() => {
             if (timerState === 1){
                 if (hours <=0 && minutes <=0 && seconds <=0 ){
-                    return 
+                    setTimerState(0)
                 } else {
                 setSeconds((prevSeconds) => prevSeconds-1)
                 if (hours >= 1 && minutes <= 0 && seconds <= 0){

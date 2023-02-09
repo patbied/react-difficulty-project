@@ -20,6 +20,8 @@ Timer
 -User can Stop/Start timer and reset time to change time
 
 Random meal Generator 
+-Displays a random meal fetched from the mealDB API (https://www.themealdb.com/api.php)
+-Displays the name, category and ingredients
 -TO DO:
---Button to fetch data
+--Add cooking instructions
 
